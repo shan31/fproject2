@@ -5,7 +5,19 @@
     --dark: #0E2E50;
 }
 
+.dropdown-item{
+    font-size: 20px;
+}
 
+.navbar{
+    background: #fff;
+   
+}
+p,span{
+    font-weight: bold;
+  
+    font-size: 20px;
+}
 /*** Spinner ***/
 #spinner {
     opacity: 0;
@@ -86,11 +98,13 @@
     font-weight: 500;
     outline: none;
     transition: .5s;
+    font-size: 20px;
+    color: var(--dark);
 }
 
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link.active {
-    color: #FFFFFF;
+    color: var(--dark);
 }
 
 .sticky-top.navbar .navbar-nav .nav-link {
@@ -104,7 +118,7 @@
 }
 
 .navbar .navbar-brand h1 {
-    color: #FFFFFF;
+    color: var(--dark);
 }
 
 .navbar .navbar-brand img {
@@ -212,22 +226,36 @@
     }
 }
 
+.hero-header h1{
+   
+}
+.hero-header .text-center{
+    background: #0c1750;
+    opacity: 0.9;
+}
+
 
 /*** Hero Header ***/
 .hero-header {
     margin-bottom: 6rem;
-    padding: 12rem 0 9rem 0;
-    background: url(../img/shape-bottom.png) center bottom no-repeat;
+    padding: 30rem 0 9rem 0;
+    background: url(../img/logo-11.jpg) center  no-repeat;
+    background-size: cover;
+    background-position: 115px 100px;
 }
 
 .page-header {
-    margin-bottom: 6rem;
+    margin-bottom: 0rem;
     padding: 12rem 0 6rem 0;
+    background: url(../img/logo-12.jpg) center  bottom no-repeat;
+    background-size: cover;
 }
 
 @media (max-width: 991.98px) {
     .hero-header {
-        padding: 6rem 0 9rem 0;
+        padding: 22rem 0 9rem 0;
+        background-position: -246px;
+        background-size: cover;
     }
 
     .page-header {
