@@ -227,11 +227,15 @@ p,span{
 }
 
 .hero-header h1{
-   
+    color: #055160;
 }
-.hero-header .text-center{
-    background: #0c1750;
+.hero-header .text-center {
+    background: #8fb8ce;
     opacity: 0.9;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: -70px;
+    color: #000;
 }
 
 
@@ -239,9 +243,9 @@ p,span{
 .hero-header {
     margin-bottom: 6rem;
     padding: 30rem 0 9rem 0;
-    background: url(../img/logo-11.jpg) center  no-repeat;
+    background: url(../img/logo-14.jpg) center  no-repeat;
     background-size: cover;
-    background-position: 115px 100px;
+    background-position: 0px 0px;
 }
 
 .page-header {
@@ -472,7 +476,26 @@ li{
     /* list-style: upper-roman; */
 }
 
+.contact .container-xxl .py-6{
+    background: url(../img/h01.gif);
+    background-size: cover;
+}
+.fa-map-marker-alt{
+    color: #fff;
+}
+address{
+    color: #fff; 
+}
+.contact .h6con{
+    color: #fff;
+}
 
+.contact .h6con,.contact .mb-5,.contact h2,.contact h1{
+    color: #fff;
+}
+p, span{
+    text-align: justify;
+}
 
 /* .page-header{
     background: url(../img/logo-11.jpg) no-repeat;
