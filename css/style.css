@@ -4,10 +4,45 @@
     --light: #F3F6F8;
     --dark: #0E2E50;
 }
-
-.dropdown-item{
-    font-size: 20px;
+.list-group .list-group-flush a{
+    color: #ffc107;
+    font-size: 15px;
+    font-weight: 900;
 }
+.list-group-numbered>li::before{
+    content: "\00BB";
+    position: absolute;
+    left: 2px;
+}
+.dropdown-item{
+    font-size: 16px;
+    border-bottom: 1px solid #000;
+    font-weight: 700!important;
+    text-transform: capitalize;
+    padding-left: 5px;
+    color: #1e2125;
+    background-color: #ffffff;
+}
+.services h4{ 
+    padding: 30px 30px 30px 30px;
+    background: #ffffff;
+    display: block;
+    width: auto;
+    border: 1px solid #ffc107;
+    margin: 0px;
+    line-height: 45px;
+}
+.dropdown-item.active, .dropdown-item:active {
+    color: #fff;
+    text-decoration: none;
+    background-color: #75a1de;
+}
+
+/* .dropdown-item:hover, .dropdown-item:focus {
+    color: #fff;
+    text-decoration: none;
+    background-color: #75a1de;
+} */
 
 .navbar{
     background: #fff;
@@ -17,6 +52,11 @@ p,span{
     font-weight: bold;
   
     font-size: 20px;
+}
+.title_service{
+    font-weight: 500;
+    font-size: 20px;
+    color: #0e2e50;
 }
 /*** Spinner ***/
 #spinner {
@@ -51,6 +91,17 @@ p,span{
 }
 
 
+.list-group-horizontal li.list-group-item{
+    width: 33%;
+
+    border: none;
+}
+
+.list-group .list-group-flush li{
+    width: 100%;
+    border: none;
+    font-size: 14px !important;
+}
 /*** Button ***/
 .btn {
     font-weight: 500;
@@ -119,16 +170,19 @@ p,span{
 
 .navbar .navbar-brand h1 {
     color: var(--dark);
+    text-transform: uppercase;
 }
 
 .navbar .navbar-brand img {
-    max-height: 60px;
+
     transition: .5s;
+    height: 120px;
+    width: 120px;
 }
 
-.sticky-top.navbar .navbar-brand img {
+/* .sticky-top.navbar .navbar-brand img {
     max-height: 45px;
-}
+} */
 
 @media (max-width: 991.98px) {
     .sticky-top.navbar {
@@ -230,41 +284,132 @@ p,span{
     color: #055160;
 }
 .hero-header .text-center {
-    background: #8fb8ce;
-    opacity: 0.9;
-    border-radius: 10px;
-    padding: 15px;
-    margin-top: -70px;
-    color: #000;
+     /* background: #75a1de; */
+     opacity: 0.8;
+     border-radius: 10px;
+     padding: 0px;
+     /* margin-top: -301px; */
+     color: #000;
+     position: absolute;
+     border: 140px;
+     margin: 0px;
+     line-height: 0px;
+     left: 30%;
+     right: 0px;
+     text-align: center!important;
 }
 
 
 /*** Hero Header ***/
 .hero-header {
     margin-bottom: 6rem;
-    padding: 30rem 0 9rem 0;
-    background: url(../img/logo-14.jpg) center  no-repeat;
+    padding: 38rem 0 9rem 0;
+    background: url(../img/banner13.png) center  no-repeat;
     background-size: cover;
     background-position: 0px 0px;
 }
 
 .page-header {
     margin-bottom: 0rem;
-    padding: 12rem 0 6rem 0;
+    padding: 20rem 0 6rem 0;
     background: url(../img/logo-12.jpg) center  bottom no-repeat;
     background-size: cover;
 }
 
-@media (max-width: 991.98px) {
-    .hero-header {
-        padding: 22rem 0 9rem 0;
-        background-position: -246px;
-        background-size: cover;
-    }
+.page-header.accounting{
+    background: url(../img/banner10.png) center  bottom no-repeat;
+    background-size: cover;
+    background-position: 0px -50px;
+}
+.page-header.payroll{
+    background: url(../img/banner11.png) center  bottom no-repeat;
+    background-size: cover;
+    background-position: 0px -50px;
+}
+.page-header.accountingsub{
+    background: url(../img/banner15.png) center  bottom no-repeat;
+    background-size: cover;
+    background-position: 0px -50px;
+}
+.page-header.payrollsub{
+    background: url(../img/banner14.png) center  bottom no-repeat;
+    background-size: cover;
+    background-position: 0px -50px;
+}
+.page-header.taxservice{
+    background: url(../img/banner12.png) center  bottom no-repeat;
+    background-size: cover;
+    background-position: 0px -50px;
+}
+.page-header.taxservicesub{
+    background: url(../img/banner16.png) center  bottom no-repeat;
+    background-size: cover;
+    background-position: 0px -50px;
+}
+.page-header.aboutus{
+    background: url(../img/banner17.png) center  bottom no-repeat;
+    background-size: cover;
+    background-position: 0px 60px;
+    padding: 30rem 0 6rem 0;
+}
+.accounting h1,.accountingsub h1,.payroll h1,.payrollsub h1,.taxservice h1,.taxservicesub h1{
+    padding-left: 60px;
+}
+.accounttext h4{
+       /* background: #38b6ff; */
+       margin: 0px;
+       /* color: #fff; */
+       padding: 10px 10px 10px 0px;
+       font-size: 16px;
+       border-bottom: 1px solid #000;
+}
+.accounttext{
+    margin:0px;
+}
+.breadcrumb{
+    padding-left: 60px;
+}
+.list{
+    background: #38b6ff;
+    margin: 0px;
+    display: flex;
+    padding: 16px;
+    /* align-items: revert; */
+    /* text-align: center; */
+    padding: 10px;
+    color: #fff;
+    flex-wrap: wrap;
+    height: -webkit-fill-available;
+    /* line-height: 14px; */
+    min-height: 300px;
+    align-items: unset;
+    /* height: 300px; */
+    line-height: 24px;
+    border: 1px solid #0dcaf0;
+    border-radius: 5px;
+    align-items: center;
+    
+}
+.list li{
+    list-style: none;
+    width: 100%;
+    padding-left: 30px;
+}
+.list h6{
+    color: #fff;
+    line-height: 40px;
+}
 
-    .page-header {
-        padding: 6rem 0;
-    }
+.list i{
+    padding-right: 10px;
+}
+
+.list.payrollist{
+    background: #ff914d;
+}
+
+.list.taxlist{
+    background: #c9e265;
 }
 
 .page-header .breadcrumb-item+.breadcrumb-item::before {
@@ -495,9 +640,52 @@ address{
 }
 p, span{
     text-align: justify;
+    font-weight: bold;
+    font-size: 16px;
+}
+.service_block ul li a{
+    font-weight: 700;
+    color: #ffc107;
+    margin-top: 10px;
+}
+.service_block ul li{
+    margin-top: 10px;
+}
+.service_block ul li::before{
+    color: #ffc107;
+    font-weight: 700;
 }
 
 /* .page-header{
     background: url(../img/logo-11.jpg) no-repeat;
     background-size: cover;
 } */
+
+@media (max-width: 991.98px) {
+    .hero-header {
+        padding: 22rem 0 9rem 0;
+        background-position: -246px;
+        background-size: cover;
+    }
+
+    .page-header {
+        padding: 6rem 0;
+    }
+}
+
+@media (min-width: 992px){
+    .navbar-expand-lg .navbar-nav .dropdown-menu {
+        position: absolute;
+        right: 0px;
+        min-width: 60rem;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .hero-header {
+        background-position: left;
+        background-size: 100% 100%;
+        padding: 150px;
+    }
+}

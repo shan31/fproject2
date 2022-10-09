@@ -26,13 +26,25 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Eagle+Lake&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">    
+
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
     <style>
         .hero-header{
             margin-bottom: 0rem;
+            
         }
+        /* .indexfont{
+            font-family: 'Eagle Lake', cursive;
+        } */
+        /* .dropdown-item{
+            font-family: 'Libre Baskerville', serif;
+        } */
     </style>
 </head>
 
@@ -51,7 +63,7 @@
         <div class="container-fluid position-relative p-0">
             <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
                 <a href="index.html" class="navbar-brand p-0">
-                    <h1 class="m-0"> <img src="img/newlogo.png" alt="Logo">Ahisub Solutions</h1>
+                    <h1 class="m-0 indexfont"> <img src="img/logo19.png" alt="Logo"></h1>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span class="fa fa-bars"></span>
@@ -62,11 +74,40 @@
                         <a href="about.html" class="nav-item nav-link">About Us</a>
                         <!-- <a href="service.html" class="nav-item nav-link">Service</a> -->
                         <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
+                            <a href="service.html" class="nav-link" >Services</a>
                             <div class="dropdown-menu m-0">
-                                <a href="accounting.html" class="dropdown-item">Accounting Services</a>
-                                <a href="payroll.html" class="dropdown-item">Payroll Services</a>
-                                <a href="taxservice.html" class="dropdown-item">Tax Compliance services</a>
+                                <ul class="list-group list-group-horizontal">
+                                    <li class="list-group-item">
+                                        <a href="accounting.html" class="dropdown-item">Accounting Services</a>
+                                        <ul class="list-group list-group-flush list-group-numbered">
+                                            <li class="list-group-item"><a href="accountingoutsourceservices.html"> Accounting Outsource Services </a> </li>
+                                            <li class="list-group-item"><a href="accountspayableservices.html"> Accounts Payable Services </a> </li>
+                                            <li class="list-group-item"><a href="accountsreceivableservices.html"> Accounts Receivable Services </a>  </li>
+                                            <li class="list-group-item"><a href="bankandcreditcardreconciliations.html"> Bank and Credit Card </a>    </li>
+                                            <li class="list-group-item"><a href="fixedassetsmanagement.html"> Fixed Assets Management </a> </li>
+                                            <li class="list-group-item"><a href="financialreportingservices.html"> Financial Reporting Services </a> </li>
+                                        </ul>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="payroll.html" class="dropdown-item">Payroll Services</a>
+                                        <ul class="list-group list-group-flush list-group-numbered">
+                                            <li class="list-group-item"><a href="payrollprocessingandreporting.html"> Payroll Processing </a></li>
+                                            <li class="list-group-item"><a href="attendanceandleavemanagement.html"> Attendance and Leave </a> </li>
+                                            <li class="list-group-item"><a href="employeereimbursementservices.html"> Employee Reimbursement  </a>  </li>
+                                            <li class="list-group-item"><a href="employeeselfservices.html"> Employee Self Services </a></li>
+                                            <li class="list-group-item"><a href="payrolltaxservices.html"> Payroll Tax Services </a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="taxservice.html" class="dropdown-item">Tax Compliance services</a>
+                                        <ul class="list-group list-group-flush list-group-numbered">
+                                            <li class="list-group-item"><a href="gstcomplianceandfilings.html"> GST Compliance</a></li>
+                                            <li class="list-group-item"><a href="incometaxreturnsandfilings.html"> Income Tax Returns</a> </li>
+                                            <li class="list-group-item"><a href="labourlawcomplianceandfilings.html"> Labour Law Compliance</a>  </li>
+                                            <li class="list-group-item"><a href="complianceaudit.html"> Compliance Audit </a> </li>
+                                        </ul>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                         <a href="contact.html" class="nav-item nav-link">Download Profile</a>
@@ -79,15 +120,15 @@
             <div class="container-fluid  hero-header">
                 <div class="container">
                     <div class="row g-5 align-items-center">
-                        <div class="col-lg-6 text-center text-lg-start">
-                            <h1 class=" mb-4 animated zoomIn">Welcome to AHISUB</h1>
-                            <!-- <p class=" pb-3 animated zoomIn">Tempor rebum no at dolore lorem clita rebum rebum ipsum rebum stet dolor sed justo kasd. Ut dolor sed magna dolor sea diam. Sit diam sit justo amet ipsum vero ipsum clita lorem</p> -->
-                            <h4 class=" mb-4 animated zoomIn">Accounting Services</h1>
-                                <h4 class=" mb-4 animated zoomIn">Payroll Services</h1>
-                                    <h4 class=" mb-4 animated zoomIn">Tax Compliance Services</h1>
-                                <p class="text-white pb-3 animated zoomIn">Grow Your Business with a Dedicated Outsourced Partner</p>
-                            <!-- <a href="" class="btn btn-outline-light rounded-pill border-2 py-3 px-5 animated slideInRight">Learn More</a> -->
-                        </div>
+                        <!-- <div class="col-lg-5 text-center text-lg-start">
+                            <h1 class=" mb-4 animated zoomIn indexfont">Welcome to AHISUB</h1>
+                            <p class=" pb-3 animated zoomIn">Tempor rebum no at dolore lorem clita rebum rebum ipsum rebum stet dolor sed justo kasd. Ut dolor sed magna dolor sea diam. Sit diam sit justo amet ipsum vero ipsum clita lorem</p>
+                            <h4 class=" mb-4 animated zoomIn indexfont">Accounting Services</h1>
+                                <h4 class=" mb-4 animated zoomIn indexfont">Payroll Services</h1>
+                                    <h4 class=" mb-4 animated zoomIn indexfont">Tax Compliance Services</h1>
+                                <p class=" pb-3 animated zoomIn">Grow Your Business with a Dedicated Outsourced Partner</p>
+                            <a href="" class="btn btn-outline-light rounded-pill border-2 py-3 px-5 animated slideInRight">Learn More</a>
+                        </div> -->
                         <!-- <div class="col-lg-6 text-center text-lg-start">
                             <img class="img-fluid animated zoomIn" src="img/logo-10.png" alt="">
                         </div> -->
