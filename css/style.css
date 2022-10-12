@@ -6,7 +6,7 @@
 }
 .list-group .list-group-flush a{
     color: #ffc107;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 900;
 }
 .list-group-numbered>li::before{
@@ -304,47 +304,65 @@ p,span{
 .hero-header {
     margin-bottom: 6rem;
     padding: 38rem 0 9rem 0;
-    background: url(../img/banner13.png) center  no-repeat;
+    background: url(../img/banner19.gif) center  no-repeat;
+    background-size: cover;
+    background-position: 0px 0px;
+    
+}
+.page-header.aboutimg{
+    margin-bottom: 0rem;
+    padding: 20rem 0 6rem 0;
+    background: url(../img/banner24.gif) center  bottom no-repeat;
+    background-size: cover;
+    background-position: 0px 10px;
     background-size: cover;
     background-position: 0px 0px;
 }
-
 .page-header {
     margin-bottom: 0rem;
-    padding: 20rem 0 6rem 0;
-    background: url(../img/logo-12.jpg) center  bottom no-repeat;
+    padding: 30rem 0 6rem 0;
+    background: url(../img/banner22.gif) center  bottom no-repeat;
     background-size: cover;
+    background-position: 0px 10px;
+    background-size: cover;
+    background-position: 0px 0px;
 }
 
 .page-header.accounting{
     background: url(../img/banner10.png) center  bottom no-repeat;
     background-size: cover;
     background-position: 0px -50px;
+    padding: 18rem 0 6rem 0;
 }
 .page-header.payroll{
     background: url(../img/banner11.png) center  bottom no-repeat;
     background-size: cover;
     background-position: 0px -50px;
+    padding: 18rem 0 6rem 0;
 }
 .page-header.accountingsub{
     background: url(../img/banner15.png) center  bottom no-repeat;
     background-size: cover;
     background-position: 0px -50px;
+    padding: 18rem 0 6rem 0;
 }
 .page-header.payrollsub{
     background: url(../img/banner14.png) center  bottom no-repeat;
     background-size: cover;
     background-position: 0px -50px;
+    padding: 18rem 0 6rem 0;
 }
 .page-header.taxservice{
     background: url(../img/banner12.png) center  bottom no-repeat;
     background-size: cover;
     background-position: 0px -50px;
+    padding: 18rem 0 6rem 0;
 }
 .page-header.taxservicesub{
     background: url(../img/banner16.png) center  bottom no-repeat;
     background-size: cover;
     background-position: 0px -50px;
+    padding: 18rem 0 6rem 0;
 }
 .page-header.aboutus{
     background: url(../img/banner17.png) center  bottom no-repeat;
@@ -362,9 +380,16 @@ p,span{
        padding: 10px 10px 10px 0px;
        font-size: 16px;
        border-bottom: 1px solid #000;
+       margin-bottom: 15px;
 }
 .accounttext{
     margin:0px;
+}
+.accounttext h6{
+    font-size: 12px;
+    color: #ffb300;
+    font-weight: bold;
+    padding-left: 10px;
 }
 .breadcrumb{
     padding-left: 60px;
@@ -551,6 +576,9 @@ p,span{
 
 
 /*** Footer ***/
+.footer{
+    background-color: #fb613d !important;
+}
 .footer .btn.btn-social {
     margin-right: 5px;
     width: 40px;
@@ -641,12 +669,13 @@ address{
 p, span{
     text-align: justify;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 20px;
 }
 .service_block ul li a{
     font-weight: 700;
     color: #ffc107;
     margin-top: 10px;
+    font-size: 18px;
 }
 .service_block ul li{
     margin-top: 10px;
